@@ -1,0 +1,63 @@
+.button {
+  border-color: #00aaff;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #00aaff inset, 0 0 0 0 #00aaff;
+  transition: all 150ms ease-in-out;
+  font-weight: 600;
+}
+
+.button__findMe {
+}
+
+.button__margin {
+  margin: 5px;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 0 #00aaff inset, 0 0 10px 4px #00aaff;
+}
+
+.rowHelpStyle_Buttons {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .button {
+    width: 250px;
+    font-size: 0.6em;
+  }
+
+  .rowHelpStyle_Buttons {
+    justify-content: center;
+  }
+
+  .button__margin {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .button {
+    width: 80%;
+    font-size: 0.9em;
+  }
+
+  .rowHelpStyle_Buttons {
+    justify-content: center;
+  }
+
+  .button__margin {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .button {
+    width: auto;
+    font-size: 1em;
+  }
+
+  .button__margin {
+    margin-left: 10px;
+  }
+}

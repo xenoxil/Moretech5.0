@@ -1,0 +1,9 @@
+version: '1'
+services:
+  frontend:
+    hostname: frontend
+    image: moretech-frontend:latest
+    container_name: moretech-frontend
+    restart: unless-stopped
+    ports:
+      - '80:5173'

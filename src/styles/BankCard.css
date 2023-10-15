@@ -1,0 +1,15 @@
+.bankCard .ant-card-body:hover {
+  cursor: pointer;
+}
+
+.bankCard__red .ant-card-body:hover {
+  background-color: #fa807252;
+}
+
+.bankCard__yellow .ant-card-body:hover {
+  background-color: #febe4652;
+}
+
+.bankCard__green .ant-card-body:hover {
+  background-color: #32cd3252;
+}

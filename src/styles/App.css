@@ -1,0 +1,20 @@
+.ant-layout-sider {
+  width: 25% !important;
+  min-width: 25% !important;
+  max-width: 25% !important;
+}
+
+.lowWorkload {
+  color: #32cd32;
+  font-size: 14;
+}
+
+.middleWorkload {
+  color: #febe46;
+  font-size: 14;
+}
+
+.highWorkload {
+  color: #fa8072;
+  font-size: 14;
+}

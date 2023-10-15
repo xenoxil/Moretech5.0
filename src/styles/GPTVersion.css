@@ -1,0 +1,146 @@
+.contentStyle_InputTextArea {
+  /* height: 70% !important; */
+  margin-top: 15px;
+}
+.zonaTexta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #78bbf6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}
+
+.ymaps-2-1-79-copyright__content {
+  display: none !important;
+}
+
+.ymaps-2-1-79-route-pin {
+  display: none;
+}
+
+.ymaps-2-1-79-route-content__button-holder {
+  display: none !important;
+}
+
+.SpaceForm {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ant-input-search
+  :where(.css-dev-only-do-not-override-pr0fja).ant-input-group
+  .ant-input-affix-wrapper:not(:last-child) {
+  border-start-start-radius: 6px;
+  border-end-start-radius: 6px;
+  border-end-end-radius: 6px !important;
+  border-start-end-radius: 6px !important;
+}
+.ant-input-group-addon {
+  display: none !important;
+}
+
+.ant-layout-sider {
+  width: 18% !important;
+  min-width: 18% !important;
+}
+
+.lowWorkload {
+  color: #32cd32;
+  font-size: 14;
+}
+
+.middleWorkload {
+  color: #febe46;
+  font-size: 14;
+}
+
+.highWorkload {
+  color: #fa8072;
+  font-size: 14;
+}
+
+.buttonSearch {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonSearch:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.buttonSearch:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+  transition: all 650ms;
+}
+
+.buttonSearch:hover:before {
+  left: 100%;
+}
+
+.footerStyle {
+  text-align: center;
+  font-size: 1em;
+  color: #000;
+}
+
+.ant-menu-item:hover {
+  color: #fff !important;
+}
+
+.fullSider {
+  margin-left: 'auto';
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  flex: 0 0 100% !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footerStyle {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  /* .fullSider {
+    max-width: 80vw;
+  } */
+  .footerStyle {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footerStyle {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,167 @@
+.rowHelpStyle {
+  margin-top: 10px;
+  display: flex;
+  /* align-items: center; */
+}
+.section {
+  overflow-y: auto;
+}
+
+.avatarHelpStyle {
+  width: 60px;
+  height: 60px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.helpTextStyle {
+  margin: 0px;
+  margin-left: 10px;
+  width: inherit;
+}
+.VoucherRow {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.helpTextStyle {
+  overflow: hidden;
+  color: #000;
+  height: auto;
+  white-space: wrap;
+  width: inherit;
+  border-right: none;
+  animation: fadeIn 2s ease-in-out;
+  /* animation: printed-text 5s steps(10000000), flashin-border 0.75s step-start infinite; */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.helpTextStyle__text {
+  font-weight: 600;
+  background-image: linear-gradient(to right, #0a2896, #1e4bd2);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes flashin-border {
+  0% {
+    border-color: rgb(8, 33, 116);
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(8, 33, 116);
+  }
+}
+
+@keyframes printed-text {
+  from {
+    width: 0%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .avatarHelpStyle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .rowHelpStyle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .helpTextStyle {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .helpTextStyle__text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .avatarHelpStyle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .rowHelpStyle {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .helpTextStyle {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+
+  .helpTextStyle__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .avatarHelpStyle {
+    width: 64px;
+    height: 64px;
+  }
+
+  .helpTextStyle {
+    font-size: 16px;
+  }
+
+  .rowHelpStyle {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .avatarHelpStyle {
+    width: 64px;
+    height: 64px;
+  }
+
+  .helpTextStyle {
+    font-size: 16px;
+  }
+
+  .rowHelpStyle {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 94%;
+  }
+}

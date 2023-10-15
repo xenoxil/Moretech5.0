@@ -1,0 +1,101 @@
+.headerStyle {
+  padding: 0;
+  background: #fff;
+  height: 64px;
+}
+
+.headerStyle__row {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+}
+
+.headerStyle__row__colText {
+  height: 100%;
+  width: 100%;
+}
+
+.headerStyle_innerText {
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  justify-content: center;
+  width: inherit;
+  color: #000;
+}
+
+.headerStyle_ColWithSearchButton {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+.headerStyle_SearchButton {
+  margin-right: 15px;
+
+  white-space: nowrap;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 3px 6px;
+  border: 2px solid #00aaff;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.25s ease 0s;
+  color: #fff;
+  background: inherit;
+  box-shadow: 0 0 40px 40px #00aaff inset, 0 0 0 0 #00aaff;
+  transition: all 150ms ease-in-out;
+}
+
+.headerStyle_SearchButton:hover {
+  box-shadow: 0 0 10px 0 #00aaff inset, 0 0 10px 4px #00aaff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .headerStyle_SearchButton {
+    font-size: 12px;
+    padding: 0px 10px;
+    height: 25px;
+  }
+
+  .headerStyle__row__colText {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .headerStyle_SearchButton {
+    font-size: 12px;
+    padding: 0px 10px;
+    height: 25px;
+  }
+
+  .headerStyle__row__colText {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headerStyle_SearchButton {
+    font-size: 14px;
+    padding: 4px 14px;
+    height: 32px;
+  }
+
+  .headerStyle__row__colText {
+    width: 100%;
+  }
+}
