@@ -360,7 +360,7 @@ export default function SiderMainPage({
       setRequests([]);
     }
     if (e.key === '2') {
-      setIsLoading(true);
+      //setIsLoading(true);
       setMapRenderState({
         center: [55.755864, 37.617698],
         zoom: 10,
